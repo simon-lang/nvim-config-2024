@@ -1,0 +1,17 @@
+return {
+  'slim-template/vim-slim',
+  'jvgrootveld/telescope-zoxide',
+  'kdheepak/lazygit.nvim',
+  'tpope/vim-fugitive',
+  'tpope/vim-rhubarb',
+  'lewis6991/gitsigns.nvim',
+  'sbdchd/neoformat',
+  'jiangmiao/auto-pairs',
+  'junegunn/vim-peekaboo',
+  'nvim-lualine/lualine.nvim' ,
+  'lukas-reineke/indent-blankline.nvim' ,
+  'numToStr/Comment.nvim' ,
+  'tpope/vim-sleuth' ,
+  'junegunn/fzf',
+  'junegunn/fzf.vim',
+}
