@@ -2,6 +2,9 @@ vim.g.mapleader = " "
 
 vim.o.clipboard = "unnamedplus"
 
+vim.o.wrap = false
+vim.o.nowrap = true
+
 vim.o.hlsearch = false
 
 vim.o.number = true
