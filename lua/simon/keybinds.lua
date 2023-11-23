@@ -25,6 +25,11 @@ vim.keymap.set('i', 'jj', '<Esc>')
 vim.keymap.set('i', 'kk', '<Esc>')
 vim.keymap.set('i', 'jk', '<Esc>')
 
+-- primagen
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("n", "J", "mzJ`z")
+
 -- save / reset
 vim.api.nvim_set_keymap('n', '<leader>R', ':edit!<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>', { noremap = true })
