@@ -14,4 +14,5 @@ return {
   'tpope/vim-sleuth' ,
   'junegunn/fzf',
   'junegunn/fzf.vim',
+  'ruanyl/vim-gh-line',
 }
