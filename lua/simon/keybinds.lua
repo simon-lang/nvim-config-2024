@@ -54,3 +54,16 @@ vim.api.nvim_set_keymap('n', '<leader>v', ':vsplit<CR>', { noremap = true, silen
 -- Cycle through splits with leader key
 vim.api.nvim_set_keymap('n', '<leader>l', '<C-w>w', { noremap = true })
 
+-- Abbreviations
+vim.cmd('abb log console.log()<Left>')
+vim.cmd('abb af () =>')
+vim.cmd('abb sfy JSON.stringify(x, null, 2)<Esc>Fxa<Backspace>')
+vim.cmd('abb debug <pre>{JSON.stringify(x, null, 2)}</pre><Esc>Fxa<Backspace>')
+vim.cmd('abb tsignore // @ts-ignore')
+vim.cmd('abb rsf export const x = (props: Props) => (<></>)<Esc>Fxa<Backspace><Backspace>')
+vim.cmd('abb rfc export const x = () =><Esc>Fxs')
+vim.cmd('abb uss const [] = useState()<Esc>F[a')
+vim.cmd('abb fun function x() {}<Esc>Fxa<Backspace>')
+vim.cmd('abb ustr const { t } = useTranslation()')
+vim.cmd('abb usd const { x } = useDiagnosticsStore()<Esc>Fxs')
+vim.cmd('abb tr {t(\'\')}<Esc>F\'i')
