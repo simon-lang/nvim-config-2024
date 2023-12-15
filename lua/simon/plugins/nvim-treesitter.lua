@@ -42,6 +42,8 @@ return {
           "dockerfile",
           "gitignore",
           "query",
+          "kotlin",
+          "ruby",
         },
         incremental_selection = {
           enable = true,
