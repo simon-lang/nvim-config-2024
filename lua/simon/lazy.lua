@@ -15,7 +15,8 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("simon.plugins")
 
 require('onedark').setup {
-    style = 'darker'
+  style = 'darker',
+  transparent = true
 }
 require('onedark').load()
 
