@@ -34,6 +34,9 @@ vim.keymap.set("n", "J", "mzJ`z")
 vim.api.nvim_set_keymap('n', '<leader>R', ':edit!<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-s>', ':w<CR>', { noremap = true })
 
+-- format
+vim.keymap.set('n', '<leader>f', ':Neoformat<CR>')
+
 -- Tabs
 vim.keymap.set('n', '<Tab>', ':bnext<CR>')
 vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>')
