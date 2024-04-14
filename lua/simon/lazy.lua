@@ -14,11 +14,11 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("simon.plugins")
 
-require('onedark').setup {
-  style = 'darker',
-  transparent = true
-}
-require('onedark').load()
+-- require('onedark').setup {
+--   style = 'darker',
+--   transparent = true
+-- }
+-- require('onedark').load()
 
 require("bufferline").setup()
 require('lualine').setup()
