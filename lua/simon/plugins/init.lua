@@ -1,4 +1,6 @@
 return {
+  'junegunn/goyo.vim',
+  'tpope/vim-dadbod',
   'slim-template/vim-slim',
   'jvgrootveld/telescope-zoxide',
   'kdheepak/lazygit.nvim',
