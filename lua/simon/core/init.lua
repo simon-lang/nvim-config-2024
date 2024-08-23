@@ -5,6 +5,9 @@ vim.o.clipboard = "unnamedplus"
 vim.o.wrap = false
 vim.o.linebreak = true
 
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
 vim.o.hlsearch = false
 
 vim.o.number = true
