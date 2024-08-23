@@ -42,6 +42,9 @@ vim.keymap.set('n', '<leader>fm', ':Neoformat<CR>')
 vim.keymap.set('n', '<leader>fa', ':TSToolsFixAll<CR>')
 vim.keymap.set('n', '<leader>fi', ':TSToolsAddMissingImports<CR>:TSToolsOrganizeImports<CR>')
 
+-- Codeium
+vim.keymap.set('n', '<F3>', ':CodeiumToggle<CR>')
+
 -- Tabs
 vim.keymap.set('n', '<Tab>', ':bnext<CR>')
 vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>')
