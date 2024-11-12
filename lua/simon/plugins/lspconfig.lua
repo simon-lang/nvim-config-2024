@@ -77,10 +77,16 @@ return {
     })
 
     -- configure typescript server with plugin
-    lspconfig["tsserver"].setup({
-      capabilities = capabilities,
+    -- lspconfig["tsserver"].setup({
+    --   filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
+    --   capabilities = capabilities,
+    --   on_attach = on_attach,
+    -- })
+
+    lspconfig.denols.setup {
       on_attach = on_attach,
-    })
+      root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
+    }
 
     -- configure css server
     lspconfig["cssls"].setup({
