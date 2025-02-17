@@ -1,6 +1,6 @@
 vim.keymap.set('n', '<leader>t', require('telescope.builtin').resume, { desc = 'Telescope Resume' })
 -- vim.keymap.set('n', '<leader>p', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
-vim.keymap.set('n', '<Leader>p', ':lua require"telescope.builtin".find_files({ hidden = true, file_ignore_patterns = {".git/", ".cache" }})<CR>', {noremap = true, silent = true })
+vim.keymap.set('n', '<Leader>p', ':lua require"telescope.builtin".find_files({ hidden = true, file_ignore_patterns = {".git/", ".cache", "static" }})<CR>', {noremap = true, silent = true })
 vim.keymap.set('n', '<leader>re', require('telescope.builtin').oldfiles, { desc = '[S]earch R[E]cent]' })
 vim.keymap.set('n', '<leader>ds', require('telescope.builtin').lsp_document_symbols, { desc = '[S]earch [D]ocument [S]ymbols' })
 vim.keymap.set('n', '<leader>ws', require('telescope.builtin').lsp_workspace_symbols, { desc = '[S]earch [W]orkspace [S]ymbols' })
@@ -61,10 +61,10 @@ vim.keymap.set("n", "gR", function() require("trouble").toggle("lsp_references")
 
 -- toggle wrap
 -- Toggle word wrap and line break
-vim.keymap.set('n', '<leader>tw', function()
-    vim.opt.wrap = true
-    vim.opt.linebreak = true
-end)
+-- vim.keymap.set('n', '<leader>tw', function()
+--     vim.opt.wrap = true
+--     vim.opt.linebreak = true
+-- end)
 
 -- Open a vertical split
 vim.api.nvim_set_keymap('n', '<leader>v', ':vsplit<CR>', { noremap = true, silent = true })
