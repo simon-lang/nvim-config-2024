@@ -14,6 +14,11 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("simon.plugins")
 
+require("notify").setup({
+  background_colour = "#000000",
+  stages = "static",
+})
+
 require('onedark').setup {
   style = 'darker',
   transparent = true
