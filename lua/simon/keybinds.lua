@@ -45,6 +45,19 @@ vim.keymap.set('n', '<leader>fi', ':TSToolsAddMissingImports<CR>:TSToolsOrganize
 -- Codeium
 vim.keymap.set('n', '<F3>', ':CodeiumToggle<CR>')
 
+-- Toggle all completion (nvim-cmp)
+vim.keymap.set('n', '<F4>', function()
+  if vim.g.cmp_toggle == nil or vim.g.cmp_toggle then
+    require('cmp').setup.buffer({ enabled = false })
+    vim.g.cmp_toggle = false
+    print('Completion disabled')
+  else
+    require('cmp').setup.buffer({ enabled = true })
+    vim.g.cmp_toggle = true
+    print('Completion enabled')
+  end
+end)
+
 -- Tabs
 vim.keymap.set('n', '<Tab>', ':bnext<CR>')
 vim.keymap.set('n', '<S-Tab>', ':bprevious<CR>')
@@ -77,7 +90,7 @@ vim.cmd('abb log console.log()<Left>')
 vim.cmd('abb af () =>')
 vim.cmd('abb sfy JSON.stringify(x, null, 2)<Esc>Fxa<Backspace>')
 vim.cmd('abb debug <pre>{JSON.stringify(x, null, 2)}</pre><Esc>Fxa<Backspace>')
-vim.cmd('abb tsignore // @ts-expect-error')
+vim.cmd('abb tsignore // @ts-expect-error<Esc>')
 vim.cmd('abb rsf export const x = (props: Props) => (<></>)<Esc>Fxa<Backspace><Backspace>')
 vim.cmd('abb rfc export const x = () =><Esc>Fxs')
 vim.cmd('abb uss const [] = useState()<Esc>F[a')
